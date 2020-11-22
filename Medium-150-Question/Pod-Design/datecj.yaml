@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: date-job
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: date-job
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - sh
+            - -c
+            - echo 'hello from kubernetes cluster';date
+            image: busybox
+            name: date-job
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: '*/1 * * * *'
+status: {}
