@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-anotherone
+spec:
+  containers:
+    - name: nginx-anotherone
+      image: nginx
+      #command: ["sleep", "3600"]
+      envFrom:
+      - configMapRef:
+          name: anotherone

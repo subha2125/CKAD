@@ -1,0 +1,153 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-11-17T05:25:48Z"
+  labels:
+    run: busybox
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:run: {}
+      f:spec:
+        f:containers:
+          k:{"name":"busybox"}:
+            .: {}
+            f:args: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:terminationGracePeriodSeconds: {}
+    manager: kubectl-run
+    operation: Update
+    time: "2020-11-17T05:25:48Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"172.16.2.119"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    time: "2020-11-17T05:25:49Z"
+  name: busybox
+  namespace: default
+  resourceVersion: "119894"
+  selfLink: /api/v1/namespaces/default/pods/busybox
+  uid: 8fe41c72-15ad-4143-87a0-c5b2ea590848
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - 'i=0; while true; do echo "$i: $(date)"; i=$((i+1)); sleep 1; done'
+    image: busybox
+    imagePullPolicy: Always
+    name: busybox
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-vqj9v
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: workervm-centos-2
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-vqj9v
+    secret:
+      defaultMode: 420
+      secretName: default-token-vqj9v
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-17T05:25:48Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-17T05:25:49Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-17T05:25:49Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-11-17T05:25:48Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://ff4278729588873c375bf3e5d877fa770933ff1f3543e1b2b45ee9fcc5550064
+    image: busybox:latest
+    imageID: docker-pullable://busybox@sha256:a9286defaba7b3a519d585ba0e37d0b2cbee74ebfe590960b0b1d6a5e97d1e1d
+    lastState: {}
+    name: busybox
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2020-11-17T05:25:49Z"
+  hostIP: 192.168.0.4
+  phase: Running
+  podIP: 172.16.2.119
+  podIPs:
+  - ip: 172.16.2.119
+  qosClass: BestEffort
+  startTime: "2020-11-17T05:25:48Z"

@@ -1,0 +1,50 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: cron
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: cron
+    spec:
+      parallelism: 2
+      backoffLimit: 15
+      completions: 2
+      activeDeadlineSeconds: 20
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - /bin/sh
+            - -c
+            - hostname >> /tmp/vol/storage
+            image: bash
+            name: cron
+            resources: {}
+            volumeMounts:
+            - name: log-vol
+              mountPath: /tmp/vol
+          restartPolicy: OnFailure
+          #nodeSelector:
+           #accelerator: nvidia-tesla-p100
+          affinity:
+           nodeAffinity:
+             requiredDuringSchedulingIgnoredDuringExecution:
+               nodeSelectorTerms:
+               - matchExpressions:
+                 - key: kubernetes.io/hostname
+                   operator: In
+                   values:
+                   - workervm-centos-2          
+          volumes:
+          - name: log-vol
+            persistentVolumeClaim:
+             claimName: local-pvc
+  schedule: '*/1 * * * *'
+  successfulJobsHistoryLimit: 4
+  startingDeadlineSeconds: 20
+status: {}
