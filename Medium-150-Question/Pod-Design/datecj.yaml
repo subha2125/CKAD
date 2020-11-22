@@ -17,7 +17,7 @@ spec:
           - command:
             - sh
             - -c
-            - echo 'hello from kubernetes cluster';date
+            - echo 'hello from kubernetes cluster';date;printenv;
             image: busybox
             name: date-job
             resources: {}
