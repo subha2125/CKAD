@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: nginx
+  name: nginx
+spec:
+  volumes:
+  - name: cmv
+    configMap:
+     name: keyvalcfgmapenv
+  containers:
+  - image: nginx:alpine
+    name: nginx
+    volumeMounts:
+    - name: cmv
+      mountPath: /etc/cfg
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

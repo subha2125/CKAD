@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: secure-busy
+  name: secure-busy
+spec:
+  containers:
+  - command:
+    - sh
+    - -c
+    - sleep 3600
+    image: busybox
+    name: secure-busy
+    env:
+    - name: USER_NAME
+      valueFrom:
+        secretKeyRef:
+          name: my-secret
+          key: username
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        cpu: 800m
+        memory: 200Mi
+      requests:
+        cpu: 200m
+        memory: 100Mi
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
