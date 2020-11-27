@@ -1,0 +1,365 @@
+LAST SEEN   TYPE      REASON                    OBJECT                                            MESSAGE
+29h         Normal    EnsuringLoadBalancer      service/employee-deatils-service                  Ensuring load balancer
+29h         Warning   SyncLoadBalancerFailed    service/employee-deatils-service                  Error syncing load balancer: failed to ensure load balancer: no node tags supplied and also failed to parse the given lists of hosts for tags. Abort creating firewall rule
+29h         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+29h         Normal    SuccessfulAttachVolume    pod/nginx                                         AttachVolume.Attach succeeded for volume "mysql-pv-gce-volume"
+29h         Normal    Pulling                   pod/nginx                                         Pulling image "nginx:latest"
+29h         Normal    Created                   pod/nginx                                         Created container nginx
+29h         Normal    Started                   pod/nginx                                         Started container nginx
+29h         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx:latest" in 743.924412ms
+29h         Normal    DeletedLoadBalancer       service/employee-deatils-service                  Deleted load balancer
+29h         Normal    Killing                   pod/mysql-deploy-77cd4647f9-6x7sv                 Stopping container mysql
+29h         Normal    Killing                   pod/employee-deployment-94fd8c7cb-gxlxm           Stopping container kubernetes-secret
+29h         Normal    Killing                   pod/employee-deployment-94fd8c7cb-k7ghs           Stopping container kubernetes-secret
+29h         Normal    Killing                   pod/nginx                                         Stopping container nginx
+28h         Normal    ScalingReplicaSet         deployment/mysql-deploy                           Scaled up replica set mysql-deploy-84bc6656f8 to 1
+28h         Normal    SuccessfulCreate          replicaset/mysql-deploy-84bc6656f8                Created pod: mysql-deploy-84bc6656f8-cmc68
+28h         Normal    Scheduled                 pod/mysql-deploy-84bc6656f8-cmc68                 Successfully assigned default/mysql-deploy-84bc6656f8-cmc68 to workervm-centos
+28h         Normal    SuccessfulAttachVolume    pod/mysql-deploy-84bc6656f8-cmc68                 AttachVolume.Attach succeeded for volume "mysql-pv-gce-volume"
+28h         Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+28h         Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+28h         Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+28h         Normal    SuccessfulCreate          replicaset/employee-deployment-94fd8c7cb          Created pod: employee-deployment-94fd8c7cb-dvkgj
+28h         Normal    Scheduled                 pod/employee-deployment-94fd8c7cb-65j59           Successfully assigned default/employee-deployment-94fd8c7cb-65j59 to workervm-centos
+28h         Normal    Scheduled                 pod/employee-deployment-94fd8c7cb-dvkgj           Successfully assigned default/employee-deployment-94fd8c7cb-dvkgj to workervm-centos-2
+28h         Normal    SuccessfulCreate          replicaset/employee-deployment-94fd8c7cb          Created pod: employee-deployment-94fd8c7cb-65j59
+28h         Normal    ScalingReplicaSet         deployment/employee-deployment                    Scaled up replica set employee-deployment-94fd8c7cb to 2
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-65j59           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-dvkgj           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-dvkgj           Successfully pulled image "eshghos/kubernetes-secret:latest" in 601.3544ms
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-dvkgj           Created container kubernetes-secret
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-65j59           Successfully pulled image "eshghos/kubernetes-secret:latest" in 501.136621ms
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-65j59           Created container kubernetes-secret
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-dvkgj           Started container kubernetes-secret
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-65j59           Started container kubernetes-secret
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-65j59           Successfully pulled image "eshghos/kubernetes-secret:latest" in 547.056164ms
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-dvkgj           Successfully pulled image "eshghos/kubernetes-secret:latest" in 466.268588ms
+28h         Warning   BackOff                   pod/employee-deployment-94fd8c7cb-65j59           Back-off restarting failed container
+28h         Warning   BackOff                   pod/employee-deployment-94fd8c7cb-dvkgj           Back-off restarting failed container
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-65j59           Successfully pulled image "eshghos/kubernetes-secret:latest" in 475.131071ms
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-dvkgj           Successfully pulled image "eshghos/kubernetes-secret:latest" in 510.487765ms
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-65j59           Successfully pulled image "eshghos/kubernetes-secret:latest" in 821.398438ms
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-dvkgj           Successfully pulled image "eshghos/kubernetes-secret:latest" in 512.289967ms
+28h         Normal    Killing                   pod/employee-deployment-94fd8c7cb-dvkgj           Stopping container kubernetes-secret
+28h         Normal    Killing                   pod/employee-deployment-94fd8c7cb-65j59           Stopping container kubernetes-secret
+28h         Normal    SuccessfulCreate          replicaset/employee-deployment-94fd8c7cb          Created pod: employee-deployment-94fd8c7cb-ggh8l
+28h         Normal    SuccessfulCreate          replicaset/employee-deployment-94fd8c7cb          Created pod: employee-deployment-94fd8c7cb-l59q8
+28h         Normal    ScalingReplicaSet         deployment/employee-deployment                    Scaled up replica set employee-deployment-94fd8c7cb to 2
+28h         Normal    Scheduled                 pod/employee-deployment-94fd8c7cb-l59q8           Successfully assigned default/employee-deployment-94fd8c7cb-l59q8 to workervm-centos-2
+28h         Normal    Scheduled                 pod/employee-deployment-94fd8c7cb-ggh8l           Successfully assigned default/employee-deployment-94fd8c7cb-ggh8l to workervm-centos
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 671.081939ms
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 618.081989ms
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+28h         Normal    Starting                  node/mastervm-centos                              Starting kubelet.
+28h         Normal    Starting                  node/workervm-centos-2                            Starting kubelet.
+28h         Normal    NodeHasNoDiskPressure     node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasNoDiskPressure
+28h         Normal    NodeHasSufficientPID      node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientPID
+28h         Normal    NodeHasNoDiskPressure     node/mastervm-centos                              Node mastervm-centos status is now: NodeHasNoDiskPressure
+28h         Normal    NodeHasSufficientMemory   node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientMemory
+28h         Normal    NodeHasSufficientMemory   node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientMemory
+28h         Normal    NodeHasSufficientPID      node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientPID
+28h         Normal    NodeAllocatableEnforced   node/workervm-centos-2                            Updated Node Allocatable limit across pods
+28h         Normal    NodeAllocatableEnforced   node/mastervm-centos                              Updated Node Allocatable limit across pods
+28h         Normal    NodeHasSufficientMemory   node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientMemory
+28h         Normal    NodeHasNoDiskPressure     node/workervm-centos                              Node workervm-centos status is now: NodeHasNoDiskPressure
+28h         Normal    NodeHasSufficientPID      node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientPID
+28h         Normal    NodeAllocatableEnforced   node/workervm-centos                              Updated Node Allocatable limit across pods
+28h         Normal    Starting                  node/workervm-centos                              Starting kubelet.
+28h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-zjzfb   Pod sandbox changed, it will be killed and re-created.
+28h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-l59q8           Pod sandbox changed, it will be killed and re-created.
+28h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-sn4ps   Pod sandbox changed, it will be killed and re-created.
+28h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-ggh8l           Pod sandbox changed, it will be killed and re-created.
+28h         Normal    Starting                  node/mastervm-centos                              Starting kube-proxy.
+28h         Normal    SandboxChanged            pod/mysql-deploy-84bc6656f8-cmc68                 Pod sandbox changed, it will be killed and re-created.
+28h         Normal    Starting                  node/workervm-centos                              Starting kube-proxy.
+28h         Normal    RegisteredNode            node/mastervm-centos                              Node mastervm-centos event: Registered Node mastervm-centos in Controller
+28h         Normal    RegisteredNode            node/workervm-centos                              Node workervm-centos event: Registered Node workervm-centos in Controller
+28h         Normal    RegisteredNode            node/workervm-centos-2                            Node workervm-centos-2 event: Registered Node workervm-centos-2 in Controller
+28h         Normal    Starting                  node/workervm-centos-2                            Starting kube-proxy.
+28h         Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+28h         Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+28h         Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+28h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Pulling image "eshghos/kubernetes-salary-service:latest"
+28h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-zjzfb   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 606.54554ms
+28h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Started container kubernetes-secret
+28h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Created container kubernetes-secret
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 737.886983ms
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+28h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+28h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 745.664013ms
+28h         Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+28h         Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+28h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Pulling image "eshghos/kubernetes-salary-service:latest"
+28h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Started container kubernetes-secret
+28h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-sn4ps   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 494.564521ms
+28h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Created container kubernetes-secret
+27h         Normal    NodeHasSufficientMemory   node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientMemory
+27h         Normal    NodeHasSufficientMemory   node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientMemory
+27h         Normal    Starting                  node/workervm-centos-2                            Starting kubelet.
+27h         Normal    Starting                  node/workervm-centos                              Starting kubelet.
+27h         Normal    NodeHasNoDiskPressure     node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasNoDiskPressure
+27h         Normal    NodeHasSufficientPID      node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientPID
+27h         Normal    NodeHasSufficientPID      node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientPID
+27h         Normal    NodeHasNoDiskPressure     node/workervm-centos                              Node workervm-centos status is now: NodeHasNoDiskPressure
+27h         Normal    NodeAllocatableEnforced   node/workervm-centos-2                            Updated Node Allocatable limit across pods
+27h         Normal    NodeAllocatableEnforced   node/workervm-centos                              Updated Node Allocatable limit across pods
+27h         Normal    NodeHasNoDiskPressure     node/mastervm-centos                              Node mastervm-centos status is now: NodeHasNoDiskPressure
+27h         Normal    NodeHasSufficientMemory   node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientMemory
+27h         Normal    NodeAllocatableEnforced   node/mastervm-centos                              Updated Node Allocatable limit across pods
+27h         Normal    Starting                  node/mastervm-centos                              Starting kubelet.
+27h         Normal    NodeHasSufficientPID      node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientPID
+27h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-sn4ps   Pod sandbox changed, it will be killed and re-created.
+27h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-ggh8l           Pod sandbox changed, it will be killed and re-created.
+27h         Warning   FailedMount               pod/mysql-deploy-84bc6656f8-cmc68                 MountVolume.NodeAffinity check failed for volume "mysql-pv-gce-volume" : error retrieving node: node "workervm-centos" not found
+27h         Normal    SandboxChanged            pod/mysql-deploy-84bc6656f8-cmc68                 Pod sandbox changed, it will be killed and re-created.
+27h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-zjzfb   Pod sandbox changed, it will be killed and re-created.
+27h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-l59q8           Pod sandbox changed, it will be killed and re-created.
+27h         Normal    Starting                  node/workervm-centos-2                            Starting kube-proxy.
+27h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+27h         Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+27h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 610.190538ms
+27h         Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+27h         Normal    Starting                  node/mastervm-centos                              Starting kube-proxy.
+27h         Normal    RegisteredNode            node/workervm-centos                              Node workervm-centos event: Registered Node workervm-centos in Controller
+27h         Normal    RegisteredNode            node/mastervm-centos                              Node mastervm-centos event: Registered Node mastervm-centos in Controller
+27h         Normal    RegisteredNode            node/workervm-centos-2                            Node workervm-centos-2 event: Registered Node workervm-centos-2 in Controller
+27h         Normal    Starting                  node/workervm-centos                              Starting kube-proxy.
+27h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-zjzfb   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 656.23818ms
+27h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Pulling image "eshghos/kubernetes-salary-service:latest"
+27h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Created container kubernetes-secret
+27h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Started container kubernetes-secret
+27h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Pulling image "eshghos/kubernetes-salary-service:latest"
+27h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+27h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-sn4ps   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 845.977093ms
+27h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Created container kubernetes-secret
+27h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 564.855459ms
+27h         Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+27h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Started container kubernetes-secret
+27h         Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+27h         Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+27h         Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+27h         Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+24h         Normal    NodeHasNoDiskPressure     node/mastervm-centos                              Node mastervm-centos status is now: NodeHasNoDiskPressure
+24h         Normal    NodeHasSufficientMemory   node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientMemory
+24h         Normal    Starting                  node/mastervm-centos                              Starting kubelet.
+24h         Normal    NodeHasSufficientPID      node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientPID
+24h         Normal    NodeAllocatableEnforced   node/mastervm-centos                              Updated Node Allocatable limit across pods
+24h         Normal    Starting                  node/workervm-centos                              Starting kubelet.
+24h         Normal    NodeHasSufficientMemory   node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientMemory
+24h         Normal    NodeHasSufficientPID      node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientPID
+24h         Normal    NodeAllocatableEnforced   node/workervm-centos                              Updated Node Allocatable limit across pods
+24h         Normal    NodeHasNoDiskPressure     node/workervm-centos                              Node workervm-centos status is now: NodeHasNoDiskPressure
+24h         Normal    NodeHasSufficientPID      node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientPID
+24h         Normal    NodeHasNoDiskPressure     node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasNoDiskPressure
+24h         Normal    NodeAllocatableEnforced   node/workervm-centos-2                            Updated Node Allocatable limit across pods
+24h         Normal    Starting                  node/workervm-centos-2                            Starting kubelet.
+24h         Normal    NodeHasSufficientMemory   node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientMemory
+24h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-sn4ps   Pod sandbox changed, it will be killed and re-created.
+24h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-ggh8l           Pod sandbox changed, it will be killed and re-created.
+24h         Normal    SandboxChanged            pod/mysql-deploy-84bc6656f8-cmc68                 Pod sandbox changed, it will be killed and re-created.
+24h         Normal    Starting                  node/workervm-centos                              Starting kube-proxy.
+24h         Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+24h         Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+24h         Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+24h         Normal    RegisteredNode            node/mastervm-centos                              Node mastervm-centos event: Registered Node mastervm-centos in Controller
+24h         Normal    RegisteredNode            node/workervm-centos                              Node workervm-centos event: Registered Node workervm-centos in Controller
+24h         Normal    RegisteredNode            node/workervm-centos-2                            Node workervm-centos-2 event: Registered Node workervm-centos-2 in Controller
+24h         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-l59q8           Pod sandbox changed, it will be killed and re-created.
+24h         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-zjzfb   Pod sandbox changed, it will be killed and re-created.
+24h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Pulling image "eshghos/kubernetes-salary-service:latest"
+24h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Created container kubernetes-secret
+24h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-sn4ps   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 767.29101ms
+24h         Normal    Starting                  node/workervm-centos-2                            Starting kube-proxy.
+24h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Started container kubernetes-secret
+24h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+24h         Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+24h         Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+24h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 607.106926ms
+24h         Normal    Starting                  node/mastervm-centos                              Starting kube-proxy.
+24h         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+24h         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Pulling image "eshghos/kubernetes-salary-service:latest"
+24h         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Created container kubernetes-secret
+24h         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 1.131711265s
+24h         Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+24h         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-zjzfb   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 640.54461ms
+24h         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Started container kubernetes-secret
+24h         Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+6h22m       Normal    Starting                  node/mastervm-centos                              Starting kubelet.
+6h22m       Normal    Starting                  node/workervm-centos-2                            Starting kubelet.
+6h22m       Normal    Starting                  node/workervm-centos                              Starting kubelet.
+6h21m       Normal    NodeHasNoDiskPressure     node/workervm-centos                              Node workervm-centos status is now: NodeHasNoDiskPressure
+6h22m       Normal    NodeHasSufficientMemory   node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientMemory
+6h22m       Normal    NodeHasNoDiskPressure     node/mastervm-centos                              Node mastervm-centos status is now: NodeHasNoDiskPressure
+6h22m       Normal    NodeAllocatableEnforced   node/mastervm-centos                              Updated Node Allocatable limit across pods
+6h21m       Normal    NodeHasSufficientPID      node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientPID
+6h22m       Normal    NodeAllocatableEnforced   node/workervm-centos-2                            Updated Node Allocatable limit across pods
+6h22m       Normal    NodeAllocatableEnforced   node/workervm-centos                              Updated Node Allocatable limit across pods
+6h21m       Normal    NodeHasNoDiskPressure     node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasNoDiskPressure
+6h21m       Normal    NodeHasSufficientPID      node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientPID
+6h21m       Normal    NodeHasSufficientMemory   node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientMemory
+6h21m       Normal    NodeHasSufficientMemory   node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientMemory
+6h22m       Normal    NodeHasSufficientPID      node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientPID
+6h19m       Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-sn4ps   Pod sandbox changed, it will be killed and re-created.
+6h19m       Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-ggh8l           Pod sandbox changed, it will be killed and re-created.
+6h20m       Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-zjzfb   Pod sandbox changed, it will be killed and re-created.
+6h20m       Normal    Starting                  node/mastervm-centos                              Starting kube-proxy.
+6h20m       Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-l59q8           Pod sandbox changed, it will be killed and re-created.
+6h20m       Normal    Starting                  node/workervm-centos-2                            Starting kube-proxy.
+6h18m       Normal    SandboxChanged            pod/mysql-deploy-84bc6656f8-cmc68                 Pod sandbox changed, it will be killed and re-created.
+6h20m       Normal    RegisteredNode            node/workervm-centos-2                            Node workervm-centos-2 event: Registered Node workervm-centos-2 in Controller
+6h20m       Normal    RegisteredNode            node/mastervm-centos                              Node mastervm-centos event: Registered Node mastervm-centos in Controller
+6h20m       Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+6h20m       Normal    RegisteredNode            node/workervm-centos                              Node workervm-centos event: Registered Node workervm-centos in Controller
+6h19m       Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+6h19m       Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 1.012492766s
+6h19m       Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Pulling image "eshghos/kubernetes-salary-service:latest"
+6h19m       Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-zjzfb   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 1.256916302s
+6h19m       Normal    Created                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Created container kubernetes-secret
+6h19m       Normal    Started                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Started container kubernetes-secret
+6h19m       Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+6h19m       Normal    Starting                  node/workervm-centos                              Starting kube-proxy.
+6h19m       Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+6h19m       Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 620.851259ms
+6h19m       Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+6h19m       Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+6h19m       Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Pulling image "eshghos/kubernetes-salary-service:latest"
+6h19m       Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-sn4ps   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 633.993152ms
+6h19m       Normal    Created                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Created container kubernetes-secret
+6h19m       Normal    Started                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Started container kubernetes-secret
+6h18m       Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+6h18m       Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+6h18m       Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+42m         Normal    Starting                  node/workervm-centos-2                            Starting kubelet.
+42m         Normal    Starting                  node/workervm-centos                              Starting kubelet.
+41m         Normal    NodeHasSufficientMemory   node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientMemory
+42m         Normal    NodeAllocatableEnforced   node/workervm-centos                              Updated Node Allocatable limit across pods
+41m         Normal    NodeHasNoDiskPressure     node/workervm-centos                              Node workervm-centos status is now: NodeHasNoDiskPressure
+42m         Normal    NodeHasSufficientPID      node/workervm-centos                              Node workervm-centos status is now: NodeHasSufficientPID
+41m         Normal    NodeHasSufficientMemory   node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientMemory
+42m         Normal    NodeHasSufficientPID      node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasSufficientPID
+42m         Normal    NodeAllocatableEnforced   node/workervm-centos-2                            Updated Node Allocatable limit across pods
+41m         Normal    NodeHasNoDiskPressure     node/workervm-centos-2                            Node workervm-centos-2 status is now: NodeHasNoDiskPressure
+40m         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-sn4ps   Pod sandbox changed, it will be killed and re-created.
+40m         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-ggh8l           Pod sandbox changed, it will be killed and re-created.
+40m         Warning   FailedMount               pod/mysql-deploy-84bc6656f8-cmc68                 MountVolume.NodeAffinity check failed for volume "mysql-pv-gce-volume" : error retrieving node: node "workervm-centos" not found
+42m         Normal    NodeHasSufficientPID      node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientPID
+42m         Normal    NodeHasNoDiskPressure     node/mastervm-centos                              Node mastervm-centos status is now: NodeHasNoDiskPressure
+42m         Normal    NodeHasSufficientMemory   node/mastervm-centos                              Node mastervm-centos status is now: NodeHasSufficientMemory
+42m         Normal    Starting                  node/mastervm-centos                              Starting kubelet.
+42m         Normal    NodeAllocatableEnforced   node/mastervm-centos                              Updated Node Allocatable limit across pods
+38m         Normal    SandboxChanged            pod/employee-salary-deployment-79f69bf76f-zjzfb   Pod sandbox changed, it will be killed and re-created.
+38m         Normal    SandboxChanged            pod/employee-deployment-94fd8c7cb-l59q8           Pod sandbox changed, it will be killed and re-created.
+40m         Normal    Starting                  node/workervm-centos                              Starting kube-proxy.
+40m         Normal    SandboxChanged            pod/mysql-deploy-84bc6656f8-cmc68                 Pod sandbox changed, it will be killed and re-created.
+40m         Normal    Starting                  node/mastervm-centos                              Starting kube-proxy.
+40m         Normal    Started                   pod/mysql-deploy-84bc6656f8-cmc68                 Started container mysql
+40m         Normal    Created                   pod/mysql-deploy-84bc6656f8-cmc68                 Created container mysql
+40m         Normal    Pulled                    pod/mysql-deploy-84bc6656f8-cmc68                 Container image "mysql:5.7" already present on machine
+40m         Normal    RegisteredNode            node/mastervm-centos                              Node mastervm-centos event: Registered Node mastervm-centos in Controller
+40m         Normal    RegisteredNode            node/workervm-centos-2                            Node workervm-centos-2 event: Registered Node workervm-centos-2 in Controller
+40m         Normal    RegisteredNode            node/workervm-centos                              Node workervm-centos event: Registered Node workervm-centos in Controller
+40m         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Pulling image "eshghos/kubernetes-salary-service:latest"
+40m         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Created container kubernetes-secret
+40m         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-sn4ps   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 648.412009ms
+40m         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-sn4ps   Started container kubernetes-secret
+40m         Normal    Created                   pod/employee-deployment-94fd8c7cb-ggh8l           Created container kubernetes-secret
+40m         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-ggh8l           Pulling image "eshghos/kubernetes-secret:latest"
+40m         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-ggh8l           Successfully pulled image "eshghos/kubernetes-secret:latest" in 495.162294ms
+40m         Normal    Started                   pod/employee-deployment-94fd8c7cb-ggh8l           Started container kubernetes-secret
+39m         Normal    Starting                  node/workervm-centos-2                            Starting kube-proxy.
+38m         Normal    Pulling                   pod/employee-deployment-94fd8c7cb-l59q8           Pulling image "eshghos/kubernetes-secret:latest"
+38m         Normal    Pulling                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Pulling image "eshghos/kubernetes-salary-service:latest"
+38m         Normal    Pulled                    pod/employee-salary-deployment-79f69bf76f-zjzfb   Successfully pulled image "eshghos/kubernetes-salary-service:latest" in 553.521082ms
+38m         Normal    Created                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Created container kubernetes-secret
+38m         Normal    Started                   pod/employee-salary-deployment-79f69bf76f-zjzfb   Started container kubernetes-secret
+38m         Normal    Pulled                    pod/employee-deployment-94fd8c7cb-l59q8           Successfully pulled image "eshghos/kubernetes-secret:latest" in 1.07381958s
+38m         Normal    Created                   pod/employee-deployment-94fd8c7cb-l59q8           Created container kubernetes-secret
+38m         Normal    Started                   pod/employee-deployment-94fd8c7cb-l59q8           Started container kubernetes-secret
+38m         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+38m         Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+37m         Normal    Started                   pod/nginx                                         Started container nginx
+37m         Normal    Created                   pod/nginx                                         Created container nginx
+37m         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 3.57749908s
+34m         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+34m         Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+34m         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 714.895701ms
+34m         Normal    Created                   pod/nginx                                         Created container nginx
+34m         Normal    Started                   pod/nginx                                         Started container nginx
+32m         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+32m         Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+32m         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 765.23343ms
+32m         Normal    Created                   pod/nginx                                         Created container nginx
+32m         Normal    Started                   pod/nginx                                         Started container nginx
+31m         Normal    Killing                   pod/nginx                                         Stopping container nginx
+28m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+28m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+28m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 825.556202ms
+28m         Warning   Failed                    pod/sleepbusy                                     Error: failed to start container "sleepbusy": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"command\": executable file not found in $PATH": unknown
+28m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+26m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+26m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+26m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+26m         Warning   Failed                    pod/sleepbusy                                     Error: failed to start container "sleepbusy": Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"command\": executable file not found in $PATH": unknown
+26m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 808.050468ms
+24m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+24m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+24m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 1.267559573s
+24m         Normal    Started                   pod/sleepbusy                                     Started container sleepbusy
+24m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+24m         Normal    Killing                   pod/sleepbusy                                     Stopping container sleepbusy
+24m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+24m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+24m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+24m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 656.841763ms
+24m         Normal    Started                   pod/sleepbusy                                     Started container sleepbusy
+23m         Normal    Killing                   pod/sleepbusy                                     Stopping container sleepbusy
+23m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+23m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+23m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 675.724571ms
+23m         Normal    Started                   pod/sleepbusy                                     Started container sleepbusy
+23m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+22m         Normal    Killing                   pod/sleepbusy                                     Stopping container sleepbusy
+22m         Normal    Pulling                   pod/sleepbusy                                     Pulling image "busybox"
+22m         Normal    Scheduled                 pod/sleepbusy                                     Successfully assigned default/sleepbusy to workervm-centos
+22m         Normal    Pulled                    pod/sleepbusy                                     Successfully pulled image "busybox" in 670.281512ms
+22m         Normal    Created                   pod/sleepbusy                                     Created container sleepbusy
+22m         Normal    Started                   pod/sleepbusy                                     Started container sleepbusy
+22m         Normal    Killing                   pod/sleepbusy                                     Stopping container sleepbusy
+19m         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+19m         Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+18m         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 666.929207ms
+18m         Normal    Created                   pod/nginx                                         Created container nginx
+18m         Normal    Started                   pod/nginx                                         Started container nginx
+17m         Normal    Killing                   pod/nginx                                         Stopping container nginx
+11m         Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+11m         Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+11m         Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 885.099987ms
+11m         Normal    Created                   pod/nginx                                         Created container nginx
+11m         Normal    Started                   pod/nginx                                         Started container nginx
+11m         Normal    Killing                   pod/nginx                                         Stopping container nginx
+8m13s       Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+8m12s       Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+8m12s       Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 876.504785ms
+8m12s       Normal    Created                   pod/nginx                                         Created container nginx
+8m11s       Normal    Started                   pod/nginx                                         Started container nginx
+7m44s       Warning   Unhealthy                 pod/nginx                                         Liveness probe failed: HTTP probe failed with statuscode: 404
+7m44s       Normal    Killing                   pod/nginx                                         Stopping container nginx
+3m56s       Normal    Scheduled                 pod/nginx                                         Successfully assigned default/nginx to workervm-centos
+3m55s       Normal    Pulling                   pod/nginx                                         Pulling image "nginx"
+3m54s       Normal    Started                   pod/nginx                                         Started container nginx
+3m54s       Normal    Pulled                    pod/nginx                                         Successfully pulled image "nginx" in 682.922789ms
+3m54s       Normal    Created                   pod/nginx                                         Created container nginx
+2m31s       Warning   Unhealthy                 pod/nginx                                         Liveness probe failed: HTTP probe failed with statuscode: 404
+2m31s       Normal    Killing                   pod/nginx                                         Stopping container nginx
+86s         Normal    Scheduled                 pod/busy                                          Successfully assigned default/busy to workervm-centos
+85s         Normal    Pulling                   pod/busy                                          Pulling image "busybox"
+84s         Normal    Pulled                    pod/busy                                          Successfully pulled image "busybox" in 664.794368ms
+84s         Normal    Created                   pod/busy                                          Created container busy
+84s         Normal    Started                   pod/busy                                          Started container busy
