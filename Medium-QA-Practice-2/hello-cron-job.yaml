@@ -1,0 +1,30 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: null
+  name: hello-cron-job
+spec:
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: hello-cron-job
+    spec:
+      completions: 10
+      activeDeadlineSeconds: 30
+      backoffLimit: 10
+      parallelism: 3
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - sh
+            - -c
+            - date;echo "Hello I am from job;ls"
+            image: busybox
+            name: hello-cron-job
+            resources: {}
+          restartPolicy: OnFailure
+  schedule: '*/1 * * * *'
+status: {}

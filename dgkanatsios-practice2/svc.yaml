@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-11-29T05:48:23Z"
+  labels:
+    run: nginx
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:run: {}
+      f:spec:
+        f:ports:
+          .: {}
+          k:{"port":80,"protocol":"TCP"}:
+            .: {}
+            f:port: {}
+            f:protocol: {}
+            f:targetPort: {}
+        f:selector:
+          .: {}
+          f:run: {}
+        f:sessionAffinity: {}
+        f:type: {}
+    manager: kubectl-expose
+    operation: Update
+    time: "2020-11-29T05:48:23Z"
+  name: nginx
+  namespace: default
+  resourceVersion: "482304"
+  selfLink: /api/v1/namespaces/default/services/nginx
+  uid: 8c9835ea-57c3-4136-b44f-c1878b1f6e59
+spec:
+  #clusterIP: 10.100.122.142
+  ports:
+  - port: 80
+    protocol: TCP
+    #targetPort: 80
+  selector:
+    run: nginx
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
